@@ -57,3 +57,15 @@ ipcRenderer.on("targetPriceVal", (e, arg) => {
   targetPriceVal = Number(arg);
   targetPrice.innerHTML = " €" + targetPriceVal.toLocaleString("en");
 });
+
+
+let version = window.location.hash.substring(1);
+document.getElementById('version').innerText = version;
+console.log('version', version)
+// Listen for messages
+ipcRenderer.on('message', function(event, text) {
+  var container = document.getElementById('messages');
+  var message = document.createElement('div');
+  message.innerHTML = text;
+  container.appendChild(message);
+})

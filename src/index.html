@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
+
+    Current version: <span id="version">vX.Y.Z</span>
+  <div id="messages"></div>
+
+
+
     <div class="row">
       <div id="price-container">
         <p class="subtext">Curretn BTC EUR</p>
@@ -29,5 +35,11 @@
     </div>
 
     <script src="index.js"></script>
+    <script>
+      let ttt = window.location.hash.substring(1);
+      console.log(ttt, "yeet,", window.location.hash.substring(0))
+
+
+    </script>
   </body>
 </html>

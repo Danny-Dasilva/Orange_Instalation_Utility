@@ -1,17 +1,18 @@
 {
-  "name": "Orange_Installation_Utility",
-  "version": "0.0.1",
-  "description": "My first electron app",
+  "name": "orange-installation-utility",
+  "version": "0.0.5",
+  "description": "Flash utility for Google Coral",
   "repository": "github:Danny-Dasilva/Orange_Installation_Utility",
   "main": "main.js",
   "scripts": {
-    "publish": "build -p always"
+    "start": "electron .",
+    "publish": "build AppImage snap deb -p always"
   },
   "keywords": [],
   "author": "Danny Dasilva",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.2",
+    "electron": "8.0.1",
     "electron-installer-snap": "^5.0.0",
     "electron-packager": "^14.2.1",
     "electron-builder": "^20.28.4"
