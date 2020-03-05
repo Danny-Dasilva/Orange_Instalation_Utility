@@ -277,7 +277,7 @@ function createDefaultWindow() {
     webPreferences: {
       nodeIntegration: true
     },
-    icon: path.join(__dirname, 'assets/icons/icons/64x64.png')
+    icon: path.join(__dirname, '/assets/icons/icons/64x64.png')
   });
   win.webContents.openDevTools();
   

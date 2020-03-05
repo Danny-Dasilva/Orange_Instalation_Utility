@@ -9,7 +9,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "publish": "build --linux AppImage deb -p always"
+    "publish": "build --linux AppImage deb snap -p always",
+    "build": "build --linux AppImage deb snap -p never"
   },
   "keywords": [],
   "author": "Danny Dasilva <dannydasilva.solutions@gmail.com>",
@@ -27,12 +28,12 @@
   "build": {
     "appId": "com.github.Danny-Dasilva.Orange_Installation_Utility",
     "linux": {
-      "category": "your.app.category.type",
-      "target": [
-        "zip",
-        "deb"
-      ],
-      "icon": "./build/icon_256.png"
+      "category": "Education",
+      "target": "AppImage",
+      "icon": "assets/icons/icons/512x512.png"
+    },
+    "snap": {
+      "confinement": "classic"
     }
   },
   "bugs": {
