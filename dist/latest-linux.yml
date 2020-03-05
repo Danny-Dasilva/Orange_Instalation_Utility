@@ -1,9 +1,0 @@
-version: 0.0.1
-files:
-  - url: orange-app-0.0.1-x86_64.AppImage
-    sha512: qvqFFn6/BN8ZSMzrQHkeaBM2rVaM/rU2XVosanwMT5+0oWfUYRC1Gz0T9mbIsPDwPsWWMydpATruZY/6nSxQCA==
-    size: 52965786
-    blockMapSize: 56030
-path: orange-app-0.0.1-x86_64.AppImage
-sha512: qvqFFn6/BN8ZSMzrQHkeaBM2rVaM/rU2XVosanwMT5+0oWfUYRC1Gz0T9mbIsPDwPsWWMydpATruZY/6nSxQCA==
-releaseDate: '2020-03-05T07:41:59.531Z'

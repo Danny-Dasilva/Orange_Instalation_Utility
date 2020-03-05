@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Electron Crypto App</title>
+    <title>Orange Update Utility</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta
       http-equiv="Content-Security-Policy"
@@ -10,11 +10,9 @@
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
-  <body>
-
-    Current version: <span id="version">vX.Y.Z</span>
+<body>
+  Current version: <span id="version">vX.Y.Z</span>
   <div id="messages"></div>
-
 
 
     <div class="row">
@@ -35,11 +33,18 @@
     </div>
 
     <script src="index.js"></script>
-    <script>
-      let ttt = window.location.hash.substring(1);
-      console.log(ttt, "yeet,", window.location.hash.substring(0))
 
 
-    </script>
-  </body>
+
+<script>
+  
+// Listen for messages
+ipcRenderer.on('message', function(event, text) {
+  var container = document.getElementById('messages');
+  var message = document.createElement('div');
+  message.innerHTML = text;
+  container.appendChild(message);
+})
+</script>
+</body>
 </html>

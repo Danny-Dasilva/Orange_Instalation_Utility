@@ -1,20 +1,18 @@
 {
   "name": "orange-installation-utility",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Flash utility for Google Coral",
   "repository": "github:Danny-Dasilva/Orange_Installation_Utility",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "publish": "build AppImage snap deb -p always"
+    "publish": "build --linux deb AppImage snap -p always"
   },
   "keywords": [],
-  "author": "Danny Dasilva",
+  "author": "Danny Dasilva <dannydasilva.solutions@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "electron": "8.0.1",
-    "electron-installer-snap": "^5.0.0",
-    "electron-packager": "^14.2.1",
     "electron-builder": "^20.28.4"
   },
   "dependencies": {
@@ -24,11 +22,11 @@
   },
   "build": {
     "appId": "com.github.Danny-Dasilva.Orange_Installation_Utility",
-    "mac": {
+    "linux": {
       "category": "your.app.category.type",
       "target": [
         "zip",
-        "dmg"
+        "deb"
       ]
     }
   }
