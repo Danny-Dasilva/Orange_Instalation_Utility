@@ -277,7 +277,7 @@ function createDefaultWindow() {
     webPreferences: {
       nodeIntegration: true
     },
-    icon: path.join(__dirname, '/assets/icons/icons/64x64.png')
+    icon: path.join(__dirname, "assets/icons/png/64x64.png"),
   });
   win.webContents.openDevTools();
   
@@ -285,7 +285,7 @@ function createDefaultWindow() {
   win.on('closed', () => {
     win = null;
   });
-  win.loadURL(`file://${__dirname}/version.html#v${app.getVersion()}`);
+  win.loadURL(`file://${__dirname}/index.html#v${app.getVersion()}`);
 
   return win;
 }

@@ -1,3 +1,0 @@
-actually style things, 
-auto-snap-.sh
-figure out teminal commands
