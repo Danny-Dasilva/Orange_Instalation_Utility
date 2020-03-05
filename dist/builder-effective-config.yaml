@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.github.Danny-Dasilva.Orange_Installation_Utility
+mac:
+  category: your.app.category.type
+  target:
+    - zip
+    - dmg
+electronVersion: 3.1.13
