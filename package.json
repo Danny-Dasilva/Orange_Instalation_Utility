@@ -1,19 +1,23 @@
 {
   "name": "orange-installation-utility",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Flash utility for Google Coral",
-  "repository": "github:Danny-Dasilva/Orange_Installation_Utility",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danny-Dasilva/Orange_Installation_Utility.git"
+  },
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "publish": "build --linux deb AppImage snap -p always"
+    "publish": "build --linux deb -p always"
   },
   "keywords": [],
   "author": "Danny Dasilva <dannydasilva.solutions@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "8.0.1",
-    "electron-builder": "^20.28.4"
+    "electron": "^3.0.2",
+    "electron-builder": "^20.28.4",
+    "electron-fix": "^1.1.2"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -29,5 +33,9 @@
         "deb"
       ]
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Danny-Dasilva/Orange_Installation_Utility/issues"
+  },
+  "homepage": "https://github.com/Danny-Dasilva/Orange_Installation_Utility#readme"
 }
