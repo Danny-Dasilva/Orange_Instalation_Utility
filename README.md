@@ -1,6 +1,6 @@
-# Electron webview
+# Electron webvie
 
-This is a simple Electron application to create a webview.
+This is a simple Electron 
 
 Features:
 
